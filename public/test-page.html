@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Setting the language to english-->
+<html lang="en">
+	<!-- The head contains the style sheet link, the font link and the title --> 
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style-two.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<title>File Sharing</title>
+</head>
+<body>
+    <header>
+        <!-- The header text -->
+        <h1 id="header">File Sharing</h1>
+    <!--	<img id="logo" src="./Images/logo.jpg" alt="logo"> -->
+    </header>
+    <!-- The navigation bar -->
+    <div class="parent">
+        <div class="child"><a href="./test-page.html"><div class="item">Share</div></a></div><!-- 
+        --><div class="child"><a href="./test-page_two.html"><div class="item">Receive</div></a></div><!-- 
+        --><div class="child"><a href="./index.html"><div class="item">Home</div></a></div>
+    </div>
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <h2>Share your files securely</h2>
+                <div class="form-input">
+                    <button id="sender-start-con-btn">Create room</button>
+                </div>
+                <div class="form-input" id="join-id">
+                </div>
+            </div>
+        </div>
+        <div class="screen fs-screen">
+            <div class="file-input">
+                <label for="file-input">
+                    Click here to select files for sharing
+                </label>
+                <input type="file" id="file-input">
+            </div>
+            <div class="files-list">
+                <div class="title">Shared files:</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="code.js"></script>
+</body>
+</html>
